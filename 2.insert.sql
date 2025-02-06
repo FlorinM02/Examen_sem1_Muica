@@ -14,4 +14,11 @@ insert into tip_ua (id,tip, id_unitati_acvatice) values ('2', 'Lac','2');
 insert into tip_ua (id,tip, id_unitati_acvatice) values ('3', 'Rau','3');
 insert into tip_ua (id,tip, id_unitati_acvatice) values ('4', 'Rau','4');
 insert into tip_ua (id,tip, id_unitati_acvatice) values ('5', 'Rau','5');
-insert into tip_ua (id,tip, id_unitati_acvatice) values ('1', 'Lac','1');
+insert into tip_ua (id,tip, id_unitati_acvatice) values ('6', 'Rau','6');
+insert into tip_ua (id,tip, id_unitati_acvatice) values ('7', 'Rau','7');
+insert into tip_ua (id,tip, id_unitati_acvatice) values ('8', 'Rau','8');
+insert into tip_ua (id,tip, id_unitati_acvatice) values ('9', 'Rau','9');
+insert into tip_ua (id,tip, id_unitati_acvatice) values ('10', 'Rau','10');
+
+
+
