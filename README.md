@@ -9,3 +9,5 @@ Entitati
 -specie, tip_specie, 
 -crescătorii
 -cuib_depunere
+
+![Diagrama_db](diagrams.png)
