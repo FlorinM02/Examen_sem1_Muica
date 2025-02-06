@@ -9,7 +9,18 @@ update unitati_acvatice set nume = 'Raul Cerna Sector 5a' where id=7;
 update unitati_acvatice set nume = 'Raul Cerna Sector 6a' where id=8;
 update unitati_acvatice set nume = 'Raul Cerna Sector 7a' where id=9;
 update unitati_acvatice set nume = 'Raul Cerna Sector 8a' where id=10;
-
+select * from tip_ua;
+update tip_ua set suprafata = '20' where id = 1;
+update tip_ua set suprafata = '290' where id = 2;
+update tip_ua set suprafata = '2' where id = 3;
+update tip_ua set suprafata = '5' where id = 1;
+update tip_ua set suprafata = '15' where id = 1;
+update tip_ua set suprafata = '3' where id = 1;
+update tip_ua set suprafata = '7' where id = 1;
+update tip_ua set suprafata = '10' where id = 1;
+update tip_ua set suprafata = '8' where id = 1;
+update tip_ua set suprafata = '11' where id = 1;
+select * from specie;
 
 
 
