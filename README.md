@@ -12,4 +12,4 @@ Entitati
 -locuri_acces
 
 
-![Diagrama_db](1.drawio.png)
+![Diagrama_db](Untitled Diagram.drawio.png)
