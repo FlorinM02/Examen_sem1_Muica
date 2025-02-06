@@ -21,6 +21,30 @@ update tip_ua set suprafata = '10' where id = 1;
 update tip_ua set suprafata = '8' where id = 1;
 update tip_ua set suprafata = '11' where id = 1;
 select * from specie;
+update specie set nume = 'pastraav' where id=1;
+update specie set nume = 'cleean' where id=2;
+update specie set nume = 'lipaan' where id=3;
+update specie set nume = 'loostrita' where id=4;
+update specie set nume = 'salau' where id=5;
+update specie set tip_specie = 'omnivor' where id = 7;
+update specie set tip_specie = 'omnivor' where id = 8;
+update specie set tip_specie = 'omnivor' where id = 9;
+update specie set tip_specie = 'omnivor' where id = 10;
+select * from crescatorii;
+update crescatorii set tip_productie = 'constanta' where tip_productie = 'sezoniera';
+update crescatorii set tip_productie = 'sezoniera' where tip_productie = 'constanta';
+update crescatorii set tip_productie = 'constanta' where id= 1;
+update crescatorii set tip_productie = 'constanta' where id= 2;
+update crescatorii set tip_productie = 'constanta' where id= 3;
+update crescatorii set tip_productie = 'constanta' where id= 4;
+update crescatorii set tip_productie = 'constanta' where id= 5;
+
+
+
+
+
+
+
 
 
 
