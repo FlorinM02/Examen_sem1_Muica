@@ -45,12 +45,30 @@ insert into specie (id, nume, tip_specie, id_tip_ua) values ('3', 'lipan', 'rapi
 insert into specie (id, nume, tip_specie, id_tip_ua) values ('4', 'lostrita', 'rapitor', '7');
 insert into specie (id, nume, tip_specie, id_tip_ua) values ('5', 'salau', 'rapitor', '1');
 insert into specie (id, nume, tip_specie, id_tip_ua) values ('6', 'salau', 'rapitor', '2');
-insert into specie (id, nume, tip_specie, id_tip_ua) values ('7', 'crap', 'rapitor', '1');
-insert into specie (id, nume, tip_specie, id_tip_ua) values ('8', 'crap', 'rapitor', '2');
-insert into specie (id, nume, tip_specie, id_tip_ua) values ('9', 'caras', 'rapitor', '1');
-insert into specie (id, nume, tip_specie, id_tip_ua) values ('10', 'caras', 'rapitor', '2');
-
-
+insert into specie (id, nume, tip_specie, id_tip_ua) values ('7', 'crap', 'omnivor', '1');
+insert into specie (id, nume, tip_specie, id_tip_ua) values ('8', 'crap', 'omnivor', '2');
+insert into specie (id, nume, tip_specie, id_tip_ua) values ('9', 'caras', 'omnivor', '1');
+insert into specie (id, nume, tip_specie, id_tip_ua) values ('10', 'caras', 'omnivor', '2');
+insert into tip_specie(id, tip, id_specie) values ('1', 'rapitor', '1');
+insert into tip_specie(id, tip, id_specie) values ('2', 'rapitor', '2');
+insert into tip_specie(id, tip, id_specie) values ('3', 'rapitor', '3');
+insert into tip_specie(id, tip, id_specie) values ('4', 'rapitor', '4');
+insert into tip_specie(id, tip, id_specie) values ('5', 'rapitor', '5');
+insert into tip_specie(id, tip, id_specie) values ('6', 'rapitor', '6');
+insert into tip_specie(id, tip, id_specie) values ('7', 'rapitor', '7');
+insert into tip_specie(id, tip, id_specie) values ('8', 'rapitor', '8');
+insert into tip_specie(id, tip, id_specie) values ('9', 'rapitor', '9');
+insert into tip_specie(id, tip, id_specie) values ('10', 'rapitor', '10');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('1', '20', 'sezoniera', '1');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('2', '3', 'sezoniera', '1');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('3', '5', 'sezoniera', '4');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('4', '10', 'sezoniera', '4');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('5', '20', 'sezoniera', '3');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('6', '5', 'constanta', '7');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('7', '12', 'constanta', '7');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('8', '25', 'constanta', '9');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('9', '25', 'constanta', '9');
+insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('10', '10', 'constanta', '9');
 
 
 
