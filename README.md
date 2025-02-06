@@ -10,4 +10,4 @@ Entitati
 -crescătorii
 -cuib_depunere
 
-![Diagrama_db](diagrams.png)
+![Diagrama_db](diagram.drawio.png)
