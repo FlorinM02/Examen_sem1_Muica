@@ -72,3 +72,4 @@ insert into crescatorii (id, suprafata, tip_productie, id_specie) values ('10', 
 
 
 
+
