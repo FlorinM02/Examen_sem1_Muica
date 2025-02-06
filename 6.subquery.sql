@@ -8,3 +8,8 @@ select sum (suprafata) as suprafata_totala from unitati_acvatice;
 select min(suprafata) from crescatorii;
 select max(suprafata) from crescatorii;
 select avg(suprafata) from crescatorii;
+select * from tip_ua;
+
+select * from tip_ua where tip in (select tip from tip_ua where tip like 'R%');
+select * from tip_ua where tip in (select tip from tip_ua where tip like '%ac');
+select * from tip_ua where suprafata>10;
