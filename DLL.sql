@@ -191,3 +191,32 @@ select * from tip_ua;
 select * from tip_ua where tip in (select tip from tip_ua where tip like 'R%');
 select * from tip_ua where tip in (select tip from tip_ua where tip like '%ac');
 select * from tip_ua where suprafata>10;
+
+SELECT * FROM unitati_acvatice 
+WHERE fid_parc IN (SELECT fid FROM parc WHERE suprafata > 50000);
+
+SELECT * FROM specie 
+WHERE id_tip_ua IN (SELECT id FROM tip_ua WHERE tip = 'Lac');
+
+SELECT * FROM crescatorii 
+WHERE suprafata > (SELECT AVG(suprafata) FROM crescatorii);
+
+SELECT COUNT(*) AS total_unitati FROM unitati_acvatice;
+
+SELECT SUM(suprafata) AS total_surface FROM unitati_acvatice;
+
+SELECT COUNT(DISTINCT nume) AS distinct_species FROM specie;
+
+SELECT MIN(suprafata) AS min_surface, MAX(suprafata) AS max_surface FROM crescatorii;
+
+SELECT tip, AVG(suprafata) AS avg_surface FROM tip_ua GROUP BY tip;
+
+SELECT * FROM unitati_acvatice 
+WHERE fid_parc = 1 AND suprafata > 50;
+
+SELECT * FROM specie 
+WHERE nume LIKE '%pastr%';
+
+SELECT * FROM crescatorii 
+WHERE suprafata BETWEEN 5 AND 20;
+
