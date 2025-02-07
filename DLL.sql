@@ -220,3 +220,33 @@ WHERE nume LIKE '%pastr%';
 SELECT * FROM crescatorii 
 WHERE suprafata BETWEEN 5 AND 20;
 
+SELECT * FROM specie 
+WHERE tip_specie = 'omnivor' AND id_tip_ua IN (SELECT id FROM tip_ua WHERE tip = 'Lac');
+SELECT * FROM unitati_acvatice 
+WHERE suprafata > 10 AND suprafata < 100;
+SELECT * FROM parc 
+WHERE nume = 'Parcul National Domogled Valea Cernei' OR suprafata > 50000;
+SELECT * FROM specie 
+WHERE tip_specie = 'rapitor' OR id_tip_ua = 3;
+SELECT * FROM unitati_acvatice 
+WHERE nume LIKE '%Raul%';
+SELECT * FROM specie 
+WHERE nume LIKE 'C%';
+SELECT * FROM parc 
+WHERE nume LIKE '%Cernei';
+SELECT * FROM unitati_acvatice 
+WHERE suprafata BETWEEN 5 AND 50;
+SELECT * FROM crescatorii 
+WHERE suprafata BETWEEN 10 AND 30;
+SELECT * FROM parc 
+WHERE suprafata BETWEEN 10000 AND 100000;
+SELECT COUNT(*) AS total_parcuri FROM parc;
+SELECT SUM(suprafata) AS total_surface FROM parc;
+SELECT AVG(suprafata) AS avg_surface FROM unitati_acvatice;
+SELECT MIN(suprafata) AS smallest, MAX(suprafata) AS largest FROM unitati_acvatice;
+SELECT id_specie, COUNT(*) AS nr_crescatorii FROM crescatorii GROUP BY id_specie;
+SELECT id_unitati_acvatice, COUNT(*) AS total_nests FROM cuib GROUP BY id_unitati_acvatice;
+SELECT id_unitati_acvatice, COUNT(*) AS total_access_points FROM locuri_acces GROUP BY id_unitati_acvatice;
+SELECT tip_productie, AVG(suprafata) AS avg_surface FROM crescatorii GROUP BY tip_productie;
+
+
