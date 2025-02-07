@@ -249,4 +249,17 @@ SELECT id_unitati_acvatice, COUNT(*) AS total_nests FROM cuib GROUP BY id_unitat
 SELECT id_unitati_acvatice, COUNT(*) AS total_access_points FROM locuri_acces GROUP BY id_unitati_acvatice;
 SELECT tip_productie, AVG(suprafata) AS avg_surface FROM crescatorii GROUP BY tip_productie;
 
-
+SELECT nume FROM parc 
+WHERE fid IN (SELECT fid_parc FROM unitati_acvatice);
+SELECT * FROM unitati_acvatice 
+WHERE id IN (SELECT id_unitati_acvatice FROM cuib);
+SELECT * FROM specie 
+WHERE id_tip_ua IN (SELECT id FROM tip_ua WHERE id_unitati_acvatice IN 
+    (SELECT id FROM unitati_acvatice WHERE suprafata > 50));
+	SELECT * FROM crescatorii 
+WHERE id_specie IN (SELECT id FROM specie WHERE id_tip_ua IN 
+    (SELECT id FROM tip_ua WHERE tip = 'Rau'));
+	SELECT id_unitati_acvatice, (SELECT COUNT(*) FROM specie WHERE id_tip_ua = tip_ua.id) 
+    AS nr_specii FROM tip_ua;
+SELECT * FROM unitati_acvatice u1
+WHERE suprafata = (SELECT MAX(suprafata) FROM unitati_acvatice u2 WHERE u1.fid_parc = u2.fid_parc);
